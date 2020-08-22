@@ -1,0 +1,13 @@
+{
+  "name": "renovate-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bodinsamuel/renovate-nodejs.git",
+  "author": "Samuel Bodin <1637651+bodinsamuel@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": "12.16.2",
+    "yarn": "^1.19.0"
+  }
+}
