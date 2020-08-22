@@ -34,6 +34,7 @@
     ]
   },
   "node": {
+    "enabled": true,
     "supportPolicy": [
       "lts_active"
     ]
