@@ -1,6 +1,5 @@
 {
   "extends": [
-    ":docker",
     ":separateMajorReleases",
     ":combinePatchMinorReleases",
     ":ignoreUnstable",
@@ -12,45 +11,19 @@
     "group:recommended"
   ],
   "enabledManagers": [
-    "circleci",
-    "docker-compose",
-    "dockerfile",
-    "kubernetes",
     "npm",
     "nvm"
   ],
   "automerge": true,
   "separateMultipleMajor": true,
-  "schedule": "every weekend",
   "reviewers": [],
-  "semanticCommitType": "chore",
-  "baseBranches": [
-    "chore/renovateBaseBranch"
-  ],
-  "docker-compose": {
-    "ignoreDeps": [
-      "kibana-oss",
-      "elasticsearch-oss"
-    ]
-  },
   "node": {
     "enabled": true,
     "supportPolicy": [
       "lts_active"
     ]
   },
-  "kubernetes": {
-    "enabled": true,
-    "fileMatch": [
-      "kubernetes/templates/.+\\.yml$"
-    ]
-  },
-  "lockFileMaintenance": {
-    "enabled": false
-  },
   "masterIssue": true,
-  "stabilityDays": 7,
-  "prCreation": "not-pending",
   "timezone": "Europe/Paris",
   "prHourlyLimit": 5,
   "prConcurrentLimit": 10
